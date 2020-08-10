@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Teste PWA Button
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Teste PWA Button</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+      <ion-button ion-button full (click)="add_to_home()" *ngIf="showBtn" >Instalar no celular</ion-button>
+
+  </div>
+</ion-content>
